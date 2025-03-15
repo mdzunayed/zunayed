@@ -1,0 +1,128 @@
+/* General Styles for Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: linear-gradient(to right, #b8c0c5, #2c3e50);
+    color: white;
+    padding: 100vh 20vh;
+    text-align: center;
+    min-height: 80vh; /* Full-screen hero section */
+    max-width: 1000vh;
+    margin: auto;
+    }
+   
+  .hero {
+    text-align: left;
+    padding: 15vh 10vh;
+    max-width: 110vh;
+    margin: auto;
+}
+
+.profile-pic {
+    width: 220px;  /* Adjust size */
+    height: 220px;
+    border-radius: 50%;  /* Makes it circular */
+    object-fit: cover;
+    position: absolute;
+    top: 20vh;  /* Adjust depending on navbar height */
+    left: 5vh;
+    border: 3px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .hero .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #f4f4f9;
+  }
+  
+  .hero .inner-container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .hero .inner-container h2 .highlight {
+    color: #ffcc00;
+  }
+  
+  .hero .inner-container h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .hero .inner-container h3 .star {
+    color: #ffcc00;
+  }
+  
+  .hero .inner-container h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .hero container .inner-container p {
+    font-size: 1.1rem;
+    color: #f4f4f9;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero .inner-container p strong {
+    color: #ffcc00;
+  }
+  
+  /* Adding animations */
+  .hero h2,
+  .hero h3,
+  .hero p {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  .hero h2 {
+    animation-delay: 0.3s;
+  }
+  
+  .hero h3 {
+    animation-delay: 0.6s;
+  }
+  
+  .hero p {
+    animation-delay: 0.9s;
+  }
+  
+  /* Keyframes for Fade-in Animation */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 2.2rem;
+    }
+  
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+  
+    .hero h4 {
+      font-size: 1.2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  

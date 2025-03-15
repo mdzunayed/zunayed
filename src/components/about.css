@@ -1,0 +1,52 @@
+/* General Styles for About Section */
+.about {
+    padding: 200px 30px;
+    background-color: #eef1f5;
+    text-align: center;
+  }
+  
+  /* Container to center the content */
+  .about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10 20px;
+  }
+  
+  /* About Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* About Section Description */
+  .about-description {
+    font-size: 1.2rem;
+    color: #596364;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  /* Ensuring it’s spaced from header */
+  body {
+    padding-top: 80px; /* If header is fixed, this ensures the content doesn't overlap */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+      padding: 0 20px;
+    }
+  }
+  
