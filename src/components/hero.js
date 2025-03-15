@@ -11,7 +11,7 @@ const Hero = () => {
 
         <div className="inner-container">
             <h2>Hello! I'm <span className="highlight">Zunayed</span></h2>
-            <h3>Problem Solver | <span className="star">2★</span> at CodeChef | ML & AI Enthusiast</h3>
+            <h3>Problem Solver | <span className="star">2★</span> at CodeChef | ML & AI </h3>
             <h4>East West University</h4>
             <p>
             Passionate about Machine Learning & Artificial Intelligence, I actively participate in Kaggle competitions 
@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
             <p>
             In addition to ML/AI, I have a good background in competitive programming, solving over  
-            <strong> 1,000+ </strong> problems across various platforms like Codeforces, AtCoder, Vjudge, and LeetCode.
+            <strong> 1,000+ </strong> problems across various platforms like Leetcode, Codeforces, Codechef, AtCoder, Vjudge, CSES etc.
             </p>
             <p>
             My technical expertise includes Python, MATLAB, NumPy, pandas, JavaScript, and backend technologies 
