@@ -3,7 +3,6 @@ import "./blog.css";
 
 const Blog = () => {
     return (
-        <div>
             
             <section className="blog-section">
                 <div className="container">
@@ -22,7 +21,7 @@ const Blog = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        
     );
 };
 

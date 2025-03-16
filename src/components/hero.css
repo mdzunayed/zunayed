@@ -1,128 +1,160 @@
 /* General Styles for Hero Section */
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    background: linear-gradient(to right, #b8c0c5, #2c3e50);
-    color: white;
-    padding: 100vh 20vh;
-    text-align: center;
-    min-height: 80vh; /* Full-screen hero section */
-    max-width: 1000vh;
-    margin: auto;
-    }
-   
-  .hero {
-    text-align: left;
-    padding: 15vh 10vh;
-    max-width: 110vh;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content */
+  background: linear-gradient(to bottom, #0a0d1a 0%, #111b2e 100%);
+  color: #f4f4f9;
+  padding: 20vh 10vw;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  position: relative;
 }
 
+/* Hero Container */
+.hero .container {
+  text-align: center;
+  padding: 5vh 5vw;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Profile Picture */
 .profile-pic {
-    width: 220px;  /* Adjust size */
-    height: 220px;
-    border-radius: 50%;  /* Makes it circular */
-    object-fit: cover;
-    position: absolute;
-    top: 20vh;  /* Adjust depending on navbar height */
-    left: 5vh;
-    border: 3px solid white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 250px; /* Adjusted size for better scaling */
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(80, 89, 102, 0.945);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 20vh;
+  top: 20vh;
 }
 
-  
-  .hero .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-    color: #f4f4f9;
-  }
-  
-  .hero .inner-container h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .hero .inner-container h2 .highlight {
-    color: #ffcc00;
-  }
-  
-  .hero .inner-container h3 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  
-  .hero .inner-container h3 .star {
-    color: #ffcc00;
-  }
-  
-  .hero .inner-container h4 {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  
-  .hero container .inner-container p {
-    font-size: 1.1rem;
-    color: #f4f4f9;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .hero .inner-container p strong {
-    color: #ffcc00;
-  }
-  
-  /* Adding animations */
-  .hero h2,
-  .hero h3,
-  .hero p {
+/* Inner Container Styling */
+.hero .inner-container {
+  background-color: #2c4b68;
+  padding: 5% 8%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(99, 92, 92, 0.2);
+  color: #f4f4f9;
+  text-align: center;
+  max-width: 900px;
+  z-index: 5; /* Ensure content stays below the image */
+}
+
+/* Highlighted text */
+.hero .inner-container .highlight {
+  color: #ffcc00; /* Gold color */
+  font-weight: 700;
+}
+
+/* Star styling */
+.hero .inner-container .star {
+  color: #ffcc00;
+}
+
+/* Headings */
+.hero .inner-container h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background: linear-gradient(to bottom, #232324 0%, #0b0f14 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .inner-container h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero .inner-container h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.hero .inner-container p {
+  font-size: 1.1rem;
+  color: #a8a8b1;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero .inner-container p strong {
+  color: #ffcc00;
+}
+
+/* Fade-in Animations */
+.hero h2,
+.hero h3,
+.hero p {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards ease-in-out;
+}
+
+.hero h2 {
+  animation-delay: 0.3s;
+}
+
+.hero h3 {
+  animation-delay: 0.6s;
+}
+
+.hero p {
+  animation-delay: 0.9s;
+}
+
+/* Keyframes for Fade-in Animation */
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeIn 1.5s forwards;
+    transform: translateY(10px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    padding: 15vh 5vw;
+  }
+
+  .hero .inner-container {
+    padding: 7% 6%;
+  }
+
   .hero h2 {
-    animation-delay: 0.3s;
+    font-size: 2.2rem;
   }
-  
+
   .hero h3 {
-    animation-delay: 0.6s;
+    font-size: 1.5rem;
   }
-  
+
+  .hero h4 {
+    font-size: 1.2rem;
+  }
+
   .hero p {
-    animation-delay: 0.9s;
+    font-size: 1rem;
   }
-  
-  /* Keyframes for Fade-in Animation */
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
   }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    .hero h2 {
-      font-size: 2.2rem;
-    }
-  
-    .hero h3 {
-      font-size: 1.5rem;
-    }
-  
-    .hero h4 {
-      font-size: 1.2rem;
-    }
-  
-    .hero p {
-      font-size: 1rem;
-    }
-  }
-  
+}

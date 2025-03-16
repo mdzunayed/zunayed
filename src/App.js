@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+// Importing components
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import About from "./components/about";
@@ -14,8 +16,7 @@ const App = () => {
       <Navbar />
       <Routes>
         {/* Default page (Hero) */}
-        <Route path="/" element={<Hero />} />{}
-        <Route path="/hero" element={<Hero />} />
+        <Route path="/" element={<Hero />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
