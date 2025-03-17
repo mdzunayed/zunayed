@@ -15,13 +15,14 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        {/* Default page (Hero) */}
+        {/* Define all routes here */}
         <Route path="/" element={<Hero />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Hero/>
       <Footer />
     </Router>
   );

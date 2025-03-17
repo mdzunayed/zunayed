@@ -1,6 +1,6 @@
 import React from "react";
 import "./hero.css";
-import profilePic from "../assets/profile.jpg"; // Ensure you have a photo in "src/assets/"
+import profilePic from "../assets/profile.jpg"; 
 
 const Hero = () => {
   return (
